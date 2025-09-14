@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Домашняя работа1</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<h1>Форма</h1>
+<form action="/name" method="post">
+
+    <label for="name">Имя:</label>
+    <input type="text" id="name" name="name"/>
+    <br>
+
+    <label for="comment">Комментарий:</label>
+    <textarea id="comment" name="comment" rows="4"></textarea>
+    <br>
+
+    <label for="country">Страна:</label>
+    <select id="country" name="country">
+        <option value="">-- Выберите --</option>
+        <option value="1">Россия</option>
+        <option value="2">Китай</option>
+        <option value="3">Беларусь</option>
+    </select>
+    <br>
+
+    <label>Пол:</label>
+    <label><input type="radio" value="1" name="gender"/> М</label>
+    <label><input type="radio" value="2" name="gender"/> Ж</label>
+    <br>
+
+    <label>Выберите:</label>
+    <label><input type="checkbox" name="чек" value="1"/> 1</label>
+    <label><input type="checkbox" name="чек" value="2"/> 2</label>
+    <label><input type="checkbox" name="чек" value="3"/> 3</label>
+    <br>
+
+    <label for="languages">Языки программирования (можно выбрать несколько):</label>
+    <select id="languages" name="languages" multiple>
+        <option value="1">JS</option>
+        <option value="2">Python</option>
+        <option value="3">Java</option>
+        <option value="3">C#</option>
+    </select>
+    <br>
+
+    <button type="submit">Отправить</button>
+</form>
+<p><a href="home.html">Вернуться на главную</a></p>
+</body>
+</html>
