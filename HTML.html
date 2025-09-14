@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Домашняя работа</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<h1>Заголовок</h1>
+<p id="my-element">Для ссылки</p>
+<p>Абзац1</p>
+<hr>
+<p>Планы на сегодня:</p>
+<ol>
+    <li>Исправить ошибки по GIT</li>
+    <li>Сделать ДЗ по POSTMAN</li>
+    <li>Сделать ДЗ по HTML</li>
+    <li>Поплакать</li>
+    <li>Осознать, что не успею сегодня сделать дз по локаторам</li>
+</ol>
+<hr>
+<table border="1">
+    <tr>
+        <th>GIT</th>
+        <th>POSTMAN</th>
+        <th>HTML</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+    </tr>
+</table>
+<hr>
+<form action="/name" method="post">
+
+    <label for="name">Имя:</label>
+    <input type="text" id="name" name="name"/>
+    <br>
+
+    <label for="comment">Комментарий:</label>
+    <textarea id="comment" name="comment" rows="4"></textarea>
+    <br>
+
+    <label for="country">Страна:</label>
+    <select id="country" name="country">
+        <option value="">-- Выберите --</option>
+        <option value="1">Россия</option>
+        <option value="2">Китай</option>
+        <option value="3">Беларусь</option>
+    </select>
+    <br>
+
+    <label>Пол:</label>
+    <label><input type="radio" value="1" name="gender"/> М</label>
+    <label><input type="radio" value="2" name="gender"/> Ж</label>
+    <br>
+
+    <label>Выберите:</label>
+    <label><input type="checkbox" name="чек" value="1"/> 1</label>
+    <label><input type="checkbox" name="чек" value="2"/> 2</label>
+    <label><input type="checkbox" name="чек" value="3"/> 3</label>
+    <br>
+
+    <label for="languages">Языки программирования (можно выбрать несколько):</label>
+    <select id="languages" name="languages" multiple>
+        <option value="1">JS</option>
+        <option value="2">Python</option>
+        <option value="3">Java</option>
+        <option value="3">C#</option>
+    </select>
+    <br>
+
+    <button type="submit">Отправить</button>
+</form>
+<hr/>
+
+<img src=data:image/jpeg;base64,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
+     alt="Картинка"/>
+
+<table border="1">
+    <tr>
+        <th colspan="2">Объеденение сolspan</th>
+    </tr>
+    <tr>
+        <td>Ячейка 1</td>
+        <td>Ячейка 2</td>
+    </tr>
+</table>
+
+<table border="1">
+    <td rowspan="2">Объеденение rowspan</td>
+    <td>Ячейка 1</td>
+    <td>Ячейка 2</td>
+    </tr>
+    <tr>
+        <td>Ячейка 3</td>
+        <td>Ячейка 4</td>
+    </tr>
+</table>
+<a href="#my-element">К "ссылке"</a>
+</body>
+</html>
